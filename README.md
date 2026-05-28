@@ -1,4 +1,4 @@
-** 🌎English & Portuguese**
+** 🌎English & Portuguese **
 
 # 🍕 PizzaShop
 
