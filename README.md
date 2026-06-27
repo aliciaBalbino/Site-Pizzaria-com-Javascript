@@ -80,7 +80,6 @@ ProjetoSitePizza/
 
 > Landing page developed for a fictional pizza restaurant, focused on **strong visual identity**, intuitive navigation, and user experience — built from scratch using HTML, CSS, and vanilla JavaScript.
 
-🔗 [View Repository](https://github.com/aliciaBalbino/ProjetoSitePizza)
 
 ---
 
