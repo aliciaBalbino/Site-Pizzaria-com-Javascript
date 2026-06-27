@@ -8,7 +8,6 @@
 
 > Landing page desenvolvida para uma pizzaria fictícia com foco em **identidade visual forte**, navegação intuitiva e experiência do usuário — construída do zero com HTML, CSS e JavaScript puro.
 
-🔗 [Ver Repositório](https://github.com/aliciaBalbino/ProjetoSitePizza)
 
 ---
 
