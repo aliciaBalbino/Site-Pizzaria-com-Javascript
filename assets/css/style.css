@@ -22,18 +22,19 @@ html {
 
 /* Menu  */
 
-.content{ 
+.content { 
     width: 100vw;
     height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #1f1e1f;
+    position: fixed;
     padding-left: 30rem;
 
 }
 
-.logo{
+.logo {
     width: 70px;
     height: auto;
     cursor: pointer;
@@ -41,12 +42,12 @@ html {
     align-items: center;
 }
 
-.logo h3{
+.logo h3 {
 color: white;
 font-size: 1.6rem;
 }
 
-.logo img{
+.logo img {
     width: 100%;
     height: 100%;
 
@@ -66,13 +67,13 @@ justify-content: space-between;
     padding: 1rem 1rem  1rem 1rem;
     color: white;
     font-size: 1.8rem;
-    text-transformation: uppercase;
+    text-transform: uppercase;
     font-weight: 500;
     transition: all 200ms ease-in;
     
 }
-zz
-.content .list-menu li a:hover{
+
+.content .list-menu li a:hover {
     background-color: #3333;
     border-bottom: 4px solid #ffc506;
     color: #ffc506;
@@ -100,14 +101,14 @@ justify-content: center;
 
 }
 
-.first-section h1{
+.first-section h1 {
     color: #ffc506;
     font-size:6rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.first-section h2{
+.first-section h2 {
     color: rgb(177, 177, 177);
     font-size: 3rem;
     font-weight: 400;
@@ -142,3 +143,185 @@ justify-content: center;
     justify-content: space-between;
 }
 
+/* Sobre Nós */
+.sobre-nos {
+
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.main{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+/* Cardápio */
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(15, 15, 15, 0.8)), url(/img/cardapio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardapio h2 {
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+.itens-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.itens-cardapio .info h4 {
+    font-size: rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h4 span {
+    font-size: 1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+
+}
+.itens-cardapio div {
+ background-color: #5e5252;
+ box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+    
+    width: 100%;
+    height: 200%;
+}
+
+.itens-cardapio .info .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #ffc506;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+ 
+}
+
+.itens-cardapio .info .pedir:hover {
+    background-color: #5e5252;
+    color: white;
+}
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover {
+    color: #ffc506;
+}
+
+footer {
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
