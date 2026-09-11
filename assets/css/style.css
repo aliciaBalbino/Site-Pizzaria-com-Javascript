@@ -125,16 +125,16 @@ justify-content: center;
 }
 
 .btn button {
-    color: black;
     width: 230px;
     height: 60px;
     cursor: pointer;
     text-transform: uppercase;
     background-color: #ffc506;
     border-radius: 10px;
+    color: black;
     font-weight: 700;
-    margin-top: 5rem;
     transition: all 400ms ease-in;
+    margin-top: 5rem;
 }
 
 .btn button:hover {
@@ -215,24 +215,25 @@ justify-content: center;
 }
 
 .itens-cardapio {
-    width: 90%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+   width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    justify-content: center;
 }
+
 
 .itens-cardapio .info {
     background-color: rgb(221, 221, 221);
-    border: none;
+    width: 100%;
+    height: auto;           /* Tira qualquer limite fixo de 150px */
+    padding: 2rem 1.5rem;   /* Dá respiro em cima e embaixo para o botão não vazar */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
 }
 
 .itens-cardapio .info h3 {
@@ -263,12 +264,17 @@ justify-content: center;
 .itens-cardapio div {
  background-color: #5e5252;
  box-shadow: 0px 0px 4px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém a imagem no topo e a info na base */
+    height: 100%;/* Força todos os cards a terem a mesma altura */
 }
 
 .itens-cardapio img {
-    
     width: 100%;
     height: 200px;
+    object-fit: contain; /* Não distorce a pizza e respeita o limite de 200px */
+    padding: 1rem;       /* Dá um respiro para a pizza não colar nas bordas */
 }
 
 .itens-cardapio .info .pedir {
@@ -279,14 +285,14 @@ justify-content: center;
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: black;
+    color: rgb(0, 0, 0);
     transition: all 200ms ease-in;
  
 }
 
 .itens-cardapio .info .pedir:hover {
     background-color: #5e5252;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .contatos {
@@ -504,15 +510,25 @@ footer {
     }
 
     .btn {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
+    display: flex;
+    flex-direction: column; /* Coloca um botão embaixo do outro no celular */
+    align-items: center;
+    gap: 1.5rem;            /* 15px de distância entre eles */
+    width: 100%;            /* Ocupa a largura necessária sem esmagar */
     }
 
     .btn button {
-        font-size: 1.5rem;
-        width: 100px;
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    transition: all 400ms ease-in;
+    margin-top: 5rem;
+        
     }
 
     .conteudo-principal h1 {
@@ -526,6 +542,7 @@ footer {
         font-size: 2rem;
         text-align: center;
     }
+
 
 }
 
@@ -554,16 +571,21 @@ footer {
         }
 
         .itens-cardapio div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px ;
 
         }
 
         .itens-cardapio .info {
-            width: 100%;
-            height: 150px;
+        background-color: rgb(221, 221, 221);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        width: 100%;
+        margin-top: auto;
         }
 
         .itens-cardapio .info h4 {
@@ -571,7 +593,24 @@ footer {
         }
 
         .itens-cardapio .info .pedir {
-            width: 100px;
-            font-size: 1.5rem;
+            width: 200px;    /* Largura padrão */
+            height: 35px;
+            margin-top: 0.5rem;
+            background-color: #ffc506;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            transition: all 200ms ease-in;
         }
-    
+        
+    @media only screen and (min-width: 466px) and (max-width: 677px) {
+    /* Estilos para o iPhone Duo Fechado */
+}
+
+@media only screen and (min-width: 626px) and (max-width: 889px) {
+    /* Estilos para o iPhone Duo Aberto */
+    .first-section h1 {
+        text-align: center;
+    }
+}
