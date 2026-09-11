@@ -1,138 +1,42 @@
-**🌎 English & Portuguese**
+# 🍕 PizzaShop - Landing Page
+
+Uma landing page moderna, atrativa e totalmente responsiva desenvolvida para uma pizzaria fictícia chamada **PizzaShop**. O objetivo do projeto foi criar uma interface limpa e intuitiva para apresentação de produtos, preços e canais de contato, focando na experiência do usuário (UX) em qualquer tamanho de tela.
+
+🔗 **Acesse o projeto online:** [Clique aqui para testar no GitHub Pages](https://aliciabalbino.github.io/Site-Pizzaria-com-Javascript/)
 
 ---
 
-<br>
+## 📱 O que o projeto faz?
 
-# 🍕 PizzaShop
-
-> Landing page desenvolvida para uma pizzaria fictícia com foco em **identidade visual forte**, navegação intuitiva e experiência do usuário — construída do zero com HTML, CSS e JavaScript puro.
-
-
----
-
-## 🎯 Objetivo
-
-Praticar o desenvolvimento frontend na construção de uma interface moderna e visualmente atrativa, inspirada em sites reais de restaurantes e plataformas de delivery. O projeto simula uma página de apresentação comercial completa, desde a identidade da marca até os elementos de conversão (CTAs).
-
----
-
-## ✨ Funcionalidades
-
-### Interface & Navegação
-- **Header com logo personalizada** — identidade visual da marca aplicada desde o topo da página
-- **Menu de navegação** — links organizados para guiar o usuário pelas seções da página
-- **Hero Section** — seção de destaque visual com chamada principal da marca
-
-### Experiência do Usuário
-- **Botões de ação (CTA)** — elementos estratégicos para engajar e direcionar o visitante
-- **Ícones sociais integrados** — links para redes sociais com ícones via Bootstrap Icons
-- **Layout responsivo** — interface adaptável a diferentes tamanhos de tela (desktop, tablet e mobile)
+- **Menu Mobile Interativo:** Botão toggle (hambúrguer) que se transforma em "X" e abre o menu em tela cheia nos dispositivos móveis.
+- **Hero Section:** Chamada de destaque com botões de ação (Call to Action) e tipografia personalizada.
+- **Cardápio Simétrico:** Vitrine de pizzas com fotos, opções de tamanhos (fatias), preços atualizados e botão de pedido direto.
+- **Seções "Sobre Nós" e "Contatos":** Espaço institucional e canais de comunicação com ícones clicáveis.
+- **Design 100% Responsivo:** Layout adaptado para smartphones compactos, tablets, dispositivos com formatos modernos de tela e computadores desktop.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Uso no Projeto |
-|---|---|
-| **HTML5** | Estrutura semântica da página |
-| **CSS3** | Estilização, layout e identidade visual |
-| **JavaScript** | Interatividade e comportamentos dinâmicos |
-| **Bootstrap Icons** | Biblioteca de ícones para elementos visuais e sociais |
-| **Git & GitHub** | Versionamento de código e hospedagem do repositório |
+- **HTML5:** Estruturação semântica e acessível.
+- **CSS3:** Estilização com **Flexbox**, **CSS Grid**, variáveis de layout, efeitos de hover e **Media Queries** para responsividade.
+- **JavaScript (Vanilla):** Manipulação de eventos no DOM e alternância de classes CSS para o menu interativo.
+- **Bootstrap Icons & Google Fonts:** Ícones modernos e fontes web personalizadas (`Roboto` e `Indie Flower`).
+- **Git & GitHub Pages:** Versionamento de código e deploy contínuo.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 💡 Aprendizados e Destaques Técnicos
 
-```
-ProjetoSitePizza/
-│
-├── index.html       → Estrutura principal da página
-├── style.css        → Estilos e identidade visual
-├── img/             → Imagens e recursos visuais
-└── README.md        → Documentação do projeto
-```
+Durante o desenvolvimento deste projeto, foram praticados conceitos fundamentais de desenvolvimento front-end:
+- Organização e hierarquia limpa entre seletores de classes no CSS.
+- Distribuição flexível e simétrica de cards usando `grid-template-columns` com `minmax` e frações (`fr`).
+- Debugging prático utilizando o **DevTools** do navegador para inspecionar o DOM, diagnosticar comportamentos de rede e resolver conflitos de responsividade.
 
 ---
 
-## 💡 Principais Aprendizados
+## 💻 Como executar o projeto localmente
 
-- Estruturação semântica de uma landing page com HTML5
-- Criação de layouts modernos e responsivos com CSS3 puro
-- Aplicação de hierarquia visual e identidade de marca em interfaces web
-- Uso de bibliotecas de ícones externas (Bootstrap Icons) via CDN
-- Boas práticas de organização de arquivos em projetos frontend
-- Versionamento de código com Git e publicação no GitHub
-
----
-
-<br>
-<br>
-
----
-
----
-
-<br>
-
-# 🍕 PizzaShop
-
-> Landing page developed for a fictional pizza restaurant, focused on **strong visual identity**, intuitive navigation, and user experience — built from scratch using HTML, CSS, and vanilla JavaScript.
-
-
----
-
-## 🎯 Goal
-
-Practice frontend development by building a modern, visually engaging interface inspired by real restaurant and food delivery websites. The project simulates a complete commercial presentation page — from brand identity to conversion-focused elements (CTAs).
-
----
-
-## ✨ Features
-
-### Interface & Navigation
-- **Custom logo header** — brand identity applied from the very top of the page
-- **Navigation menu** — organized links guiding the user through page sections
-- **Hero Section** — visually striking banner with the brand's main call-to-action
-
-### User Experience
-- **Call-to-action buttons (CTA)** — strategic elements to engage and direct visitors
-- **Integrated social icons** — social media links with icons via Bootstrap Icons
-- **Responsive layout** — interface adapted to different screen sizes (desktop, tablet, and mobile)
-
----
-
-## 🛠️ Technologies Used
-
-| Technology | Use in the Project |
-|---|---|
-| **HTML5** | Semantic page structure |
-| **CSS3** | Styling, layout, and visual identity |
-| **JavaScript** | Interactivity and dynamic behavior |
-| **Bootstrap Icons** | Icon library for visual and social elements |
-| **Git & GitHub** | Version control and repository hosting |
-
----
-
-## 📂 Project Structure
-
-```
-ProjetoSitePizza/
-│
-├── index.html       → Main page structure
-├── style.css        → Styles and visual identity
-├── img/             → Images and visual assets
-└── README.md        → Project documentation
-```
-
----
-
-## 💡 Key Learnings
-
-- Semantic structuring of a landing page with HTML5
-- Building modern, responsive layouts with pure CSS3
-- Applying visual hierarchy and brand identity to web interfaces
-- Using external icon libraries (Bootstrap Icons) via CDN
-- Good practices for file organization in frontend projects
-- Version control with Git and publishing to GitHub
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/aliciaBalbino/Site-Pizzaria-com-Javascript.git](https://github.com/aliciaBalbino/Site-Pizzaria-com-Javascript.git)
